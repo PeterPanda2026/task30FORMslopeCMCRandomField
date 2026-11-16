@@ -1,0 +1,58 @@
+# Dependency folders
+node_modules/
+.venv/
+venv/
+env/
+ENV/
+site-packages/
+.conda/
+
+# Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.ipynb_checkpoints/
+.cache/
+.tox/
+.nox/
+
+# Build / dist / packaging output
+build/
+dist/
+out/
+*.egg-info/
+.eggs/
+wheels/
+
+# Coverage output
+coverage/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+
+# Large regenerable Monte Carlo output: scripts write the full sets of CMC
+# realizations and intermediate caches here; summaries (FS statistics, Pf as
+# CSV/JSON) and figures stay in the project
+realizations/
+cache/
+# scikit-learn / joblib on-disk memoization cache
+joblib/
+cachedir/
+
+# Editor / OS clutter (~$* also covers Office lock files such as ~$*.docx / ~$*.xlsx)
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+~$*
+
+# Local environment, secrets and logs (keep personal information out of the repo)
+.env
+.env.*
+*.log
+desktop.ini
